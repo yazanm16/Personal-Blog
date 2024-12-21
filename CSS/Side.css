@@ -1,0 +1,17 @@
+#Sidebar{
+    grid-area: Sd;
+}
+#yazanimg{
+    width:170px;
+    height:160px;
+}
+
+#me{
+    width:240px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+
+}

@@ -1,0 +1,49 @@
+@import "Header.css";
+@import "Footer.css";
+@import "Header.css";
+@import "Footer.css";
+body{
+    background-color: lightblue;
+}
+.container{
+    display: grid;
+    grid-template-columns:300px 300px 250px;
+    grid-template-rows:60px 600px 50px ;
+    grid-template-areas:
+    "Na Na Na Na Na Na Na Na"
+    "main main main main main main main main"
+    "Ft Ft Ft Ft Ft Ft Ft Ft";
+}
+
+
+#main{
+    grid-area: main;
+    display: flex;
+}
+#content{
+    display: flex;
+    flex-direction: column;
+
+}
+img{
+    height:200px;
+    width: 200px;
+}
+ul{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+@media (max-width:1024px){
+    .container{
+        display: grid;
+        grid-template-columns:1fr;
+        grid-template-rows:auto ;
+        grid-template-areas:
+        "Na"
+        "main"
+        "Ft";
+    }
+
+
+}

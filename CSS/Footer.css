@@ -1,0 +1,15 @@
+
+#Footer{
+    background:#5154b2 ;
+    grid-area: Ft;
+}
+.contact_me{
+    display: flex;
+    justify-content:center;
+
+
+
+}
+.contact_me a{
+    color: cadetblue;
+}

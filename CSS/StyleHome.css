@@ -1,0 +1,131 @@
+@import "Header.css";
+@import "Side.css";
+@import "Footer.css";
+body{
+    background: lightblue;
+
+}
+.container{
+    display: grid;
+    grid-template-columns:300px 300px 250px;
+    grid-template-rows:60px 600px 50px ;
+    grid-template-areas:
+    "Na Na Na Na Na Na Na Na"
+    "main main main main main Sd Sd Sd"
+    "Ft Ft Ft Ft Ft Ft Ft Ft";
+}
+.box{
+    border: black solid 1px;
+}
+
+#content{
+    grid-area: main;
+}
+.posts{
+    display: grid;
+    grid-template-rows: 320px 280px;
+    grid-template-columns:150px 150px;
+    grid-template-areas:
+    "je je je je je je je je"
+    "ak ak ak ak tu tu tu tu";
+}
+.travels{
+    border: wheat solid 1px;
+}
+#t1{
+    grid-area: je;
+    display: flex;
+
+}
+#jerimg{
+    height: 100%;
+
+}
+.jerucontent{
+    margin-left: 20px;
+    display: inline;
+    font-size: 25px;
+}
+#t2{
+    grid-area: ak;
+}
+.akkaimg{
+    height: 130px;
+    width: 240px;
+}
+#t3{
+    grid-area: tu;
+}
+.istanbulimg{
+    height: 130px;
+    width: auto;
+
+}
+.cont_travels{
+    text-align: center;
+    padding: 5px;
+}
+
+ @media (max-width:1024px) {
+     .container{
+         display: grid;
+         grid-template-columns:1fr;
+         grid-template-rows:auto ;
+         grid-template-areas:
+            "Na"
+            "Sd"
+            "main"
+            "Ft";
+     }
+     .posts{
+         display: grid;
+         grid-template-rows: 320px 280px;
+         grid-template-columns:1fr;
+         grid-template-areas:
+            "je"
+            "ak"
+            "tu";
+
+     }
+     .jerucontent p{
+         font-size: 17px;
+     }
+     p{
+         font-size: 100%;
+     }
+     a{
+         font-size: 12px;
+     }
+     .cont_travels{
+         text-align: left;
+         display: flex;
+         flex-direction: column;
+
+     }
+     .cont_travels button{
+         margin-left: 20px;
+         width: 100px;
+     }
+     #t1{
+         display: flex;
+         flex-direction: column;
+
+     }
+     #jerimg{
+         height: 60%;
+     }
+     .akkaimg{
+         height: 150px;
+         width: auto;
+     }
+     #me{
+         display: flex;
+         flex-direction: row;
+         gap: 30px;
+         align-items: center;
+         width: auto;
+     }
+
+
+
+ }
